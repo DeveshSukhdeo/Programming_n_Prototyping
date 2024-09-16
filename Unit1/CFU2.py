@@ -1,3 +1,7 @@
+#9/16/24
+#Period 1-2
+#Devesh Sukhdeo
+
 fname = input("What is your first name? ")
 lname = input("What is your last name? ")
 age = input("How old are you? (Number Only) ") 
