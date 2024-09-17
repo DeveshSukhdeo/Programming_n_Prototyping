@@ -1,3 +1,7 @@
+#9/17/24
+#Period 1-2
+#Devesh Sukhdeo
+
 print("Let's play Silly Sentences!\n") 
 
 name = input("Enter a name: ")
