@@ -1,3 +1,7 @@
+#9/24/24
+#Period 1-2
+#Devesh Sukhdeo
+
 fname = input("Enter your first name: ")
 lname = input("Enter your last name: ") 
 
