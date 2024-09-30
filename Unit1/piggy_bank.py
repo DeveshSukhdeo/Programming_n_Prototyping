@@ -14,6 +14,7 @@
 # calculate the total and give the answer in decimals and in a combination 
 # i.e: $13.67 or $13 and 2 quarters, 1 dime, 1 nickle, 2 cent. 
 
+# to find the total value of the coins, I multiplied the amount of coins by their individual value
 pennies = int(input("How many pennies do you have? "))
 nickles = int(input("How many nickels do you have? "))
 dimes = int(input("How many dimes do you have? "))
