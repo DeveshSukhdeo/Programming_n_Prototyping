@@ -1,3 +1,8 @@
+#10/2/24
+#Devesh Sukhdeo
+#Period 1-2
+#Calculations with a random number between 1 and 100 and a number entered by the user. 
+
 import random 
 import math 
 
@@ -8,6 +13,7 @@ num1 = int(input("Enter a number: "))
 print ("Results: ")
 print ("Random Number Generated: " + str(r_num))           
 print ("Entered Number: " + str(num1))
+print (" ") 
 
 add = r_num + num1
 subtract = r_num - num1
