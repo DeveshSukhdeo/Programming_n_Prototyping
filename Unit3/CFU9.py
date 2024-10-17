@@ -16,9 +16,6 @@ print("Random number: " + str(r_num))
 if g_num == r_num:
     points = points + 6
     print("Your total points are: " + str(points))
-elif g_num != r_num: 
+else: 
     points = points - 1
     print("Your total points are: " + str(points))
-else: 
-    print("Your total points are: " + str(points))
- 
