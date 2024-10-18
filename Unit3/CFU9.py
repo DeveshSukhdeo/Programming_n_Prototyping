@@ -27,4 +27,4 @@ def rolls(num_rolls, total = 0):
         return rolls(num_rolls, total)
     
 total = rolls(num_rolls)
-print(f"The total is: {total}") 
+print(f"The total is: {total}")
