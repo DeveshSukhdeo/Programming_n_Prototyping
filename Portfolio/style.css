@@ -1,4 +1,3 @@
-
 html{
   height: 100%;
 }
@@ -7,6 +6,7 @@ body{
   height: 100%; 
   text-align: center; 
   background-color: #470085; 
+  background-size: cover; 
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -46,7 +46,7 @@ header{
   text-align: center;
   float: right;
   margin: none;
-  background-color: #470085;
+  background: rgba(0,0,0,0);
 }
 
 #menu li{
@@ -60,7 +60,7 @@ header{
   padding: 0em 1.5em;
   text-decoration: none;
   font-weight: bold; 
-  line-height: 60px;
+  line-height: 35px;
   text-transform: uppercase; 
   color: white; 
 }
@@ -75,35 +75,10 @@ header{
   color:black; 
 }
 
-.active{
-  /* background-color: #eaccf6; */
-  background-color: #6969f7;
+.active {
+  border-bottom: 4px solid #6969f7;
   color: black;
 } 
-
-#header-image{
-  top: 10px;
-  position: relative;
-}
-
-#header-image img{
-  width: 100%;
-  height: 600px; 
-  margin: none;
-  padding: none;
-  filter: grayscale(35%);
-}
-
-#image-text{
-  position: absolute;
-  top: 35%; 
-  left: 50%; 
-  transform: translate(-50%, -50%);
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  color: white;
-  text-align: center;
-  font-size: 50px; 
-}
 
 a {
   text-decoration: none;
@@ -111,24 +86,28 @@ a {
 
 .abtMePage{
   display: flex;
-  column-gap: 20px; 
-  margin-top: 20px; 
+  column-gap: 60px; 
+  margin-top: 70px; 
 }
 .abtMeLeft{
-  border: 3px solid black;
-  height: 500px;
+  border: 3px solid white;
+  height: 400px;
   width: 40%;
-  background-color: #6969f7;
-  margin-left: 25px; 
+  background-color: #b4b4ee;
+  margin-left: 20%; 
   overflow: hidden;
+  opacity: 0.8;
+  border-radius: 50px;
 }
 .abtMeRight{
-  border: 3px solid black; 
-  height: 500px;
-  width: 60%;
-  background-color: #6969f7;
-  margin-right: 25px; 
+  border: 3px solid white; 
+  height: 400px;
+  width: 40%;
+  background-color: #b4b4ee;
+  margin-right: 20%; 
   overflow: hidden; 
+  opacity: 0.8;
+  border-radius: 50px;
 }
 
 p{
@@ -143,3 +122,4 @@ hr{
 /*iframe{
   background-color: blue;
 }*/
+
