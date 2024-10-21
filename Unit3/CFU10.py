@@ -1,3 +1,8 @@
+#10/21/24
+#Devesh Sukhdeo
+#Period 1-2
+#CFU #10 
+
 import random
 num_random = random.randint(1,10) 
 num_attempts = 0 
