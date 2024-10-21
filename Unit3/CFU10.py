@@ -4,7 +4,7 @@
 #CFU #10 
 
 import random
-num_random = random.randint(1,10) 
+num_random = random.randint(1,2) 
 num_attempts = 0 
 
 def guess(num_random, num_attempts):
@@ -14,10 +14,10 @@ def guess(num_random, num_attempts):
         print("Your guess is correct, you made " + str(num_attempts) + " attempts.")
     elif guess_num > num_random:
         print("Your guess is too high.")
-        return guess
+        guess(num_random, num_attempts)
     elif guess_num < num_random: 
         print("Your guess is too low.")
-        return guess
+        guess(num_random, num_attempts)
     else: 
         return guess
     
