@@ -2,7 +2,7 @@
 #Devesh Sukhdeo
 #Period 1-2
 #CFU #10 
-#User needs to guess the random number. 
+#Create a guessing game (1-10) that informs the player whether or not the guess was "too high" or "too low" and prints how many attempts it took. 
 
 import random
 num_random = random.randint(1,10) 
