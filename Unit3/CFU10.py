@@ -2,6 +2,7 @@
 #Devesh Sukhdeo
 #Period 1-2
 #CFU #10 
+#User needs to guess the random number. 
 
 import random
 num_random = random.randint(1,2) 
