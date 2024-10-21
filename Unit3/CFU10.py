@@ -5,7 +5,7 @@
 #User needs to guess the random number. 
 
 import random
-num_random = random.randint(1,2) 
+num_random = random.randint(1,10) 
 num_attempts = 0 
 
 def guess(num_random, num_attempts):
