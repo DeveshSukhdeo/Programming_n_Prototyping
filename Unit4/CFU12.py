@@ -9,14 +9,19 @@ Write a program that asks the user for the password.
 -For correct password it should say “Correct! You may enter….”
 -And then it ends the program
 '''
-#CFU 12
+#CFU #12
 
 password = "simonsnyc"
 pword = input("What is the password")
+count = 0
 
-while pword != password:
+while pword != password and count < 2:
     print ("Wrong Password!")
     pword = input("What is the password")
-print ("Correct, you may enter...")
+    count = count + 1
+if pword == password:
+    print ("Correct, you may enter...")
+else: 
+    print ("Wrong Password!")
 
     
