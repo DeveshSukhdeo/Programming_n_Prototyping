@@ -14,7 +14,7 @@ Modify Version 1 so that the User gets only 3 chances.
 '''
 #CFU #12
 
-version = int(input("What version do you want to run? "))
+version = int(input("What version do you want to run? (1 or 2) "))
 
 def ver1(version):
     password = "simonsnyc"
