@@ -135,3 +135,9 @@ iframe{
   border-radius: 24px;
 }
 
+.pagetitle{
+  color: white;
+  margin-top: 50px;
+  text-align: center;
+  font-size: 22px;
+}
