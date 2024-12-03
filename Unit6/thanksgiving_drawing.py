@@ -3,11 +3,19 @@
 # 12/2/24
 
 import simplegui 
+#Frame Setup 
+frame = simplegui.create_frame("Thanksgiving Drawing", 600, 400)
+#Set Frame Background 
+frame.set_canvas_background("skyblue")
 
 def draw(canvas):
     #Polygons (Feathers)
-    
-    
+    canvas.draw_polygon([(280, 220), (100, 230), (270, 340)], 2, "black", "blue")
+    canvas.draw_polygon([(290, 150), (130, 80), (280, 280)], 2, "black", "yellow")
+    canvas.draw_polygon([(250, 150), (300, 20), (350, 150)], 2, "black", "pink")
+    canvas.draw_polygon([(310, 150), (470, 80), (320, 280)], 2, "black", "red")
+    canvas.draw_polygon([(320, 220), (500, 230), (330, 340)], 2, "black", "green")
+   
     #Cirlces (Make the body)
     canvas.draw_circle((300, 280), 85, 5, "brown", "brown")
     canvas.draw_circle((300, 170), 55, 5, "brown", "brown")
@@ -23,11 +31,8 @@ def draw(canvas):
     
     #Polygon (Beak)
     canvas.draw_polygon([(290, 170), (300, 180), (310, 170)], 1, "yellow", "yellow")
-   
-    
- 
-#Create the frame 
-frame = simplegui.create_frame("Thanksgiving Drawing", 600, 400) 
-frame.set_canvas_background("skyblue")
+     
+#Assign draw handler to frame 
 frame.set_draw_handler(draw)
+#Start Frame 
 frame.start()
