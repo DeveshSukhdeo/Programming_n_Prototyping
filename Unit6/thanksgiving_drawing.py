@@ -52,10 +52,14 @@ def turkey_feet(canvas):
     canvas.draw_line([330, 350], [323, 375], 7, "#ffc002")
     
 def background(canvas):
-    
+    #Grass
+    canvas.draw_polygon([(0, 300), (0, 400), (600, 400), (600, 300)], 1, "green", "green")
+    #Sun
+    canvas.draw_circle((25, 50), 70, 1, "yellow", "yellow")
 
 #Create a function to call all other functions in draw_handler    
 def draw(canvas):
+    background(canvas)
     turkey_feet(canvas)
     feathers(canvas)
     turkey_body(canvas)
