@@ -1,7 +1,7 @@
 # Devesh Sukhdeo
 # Period 1-2 
 # 12/12/24
-# Description
+# Create a winter themed animation using the simplegui library in python
 
 import simplegui 
 import random 
@@ -40,12 +40,9 @@ def draw(canvas):
     for part in snowman_parts:
         canvas.draw_circle(part["center"], part["radius"], 2, part["color"], part["color"])
   
-
 def timer_handler():
     global count
-    global move
     count += 1
-    move += 5
     
     if count == 1: 
         snowman_parts.append({"center": (300, 400), "radius": 50, "color": "White"})
@@ -53,12 +50,9 @@ def timer_handler():
         snowman_parts.append({"center": (280, 390), "radius": 8, "color": "black"})
         snowman_parts.append({"center": (320, 390), "radius": 8, "color": "black"})
     elif count == 3: 
+        pass
+    
         
-
-    
-    
-    
-
 # Create timer 
 timer = simplegui.create_timer(100, timer_handler)
 timer.start()
