@@ -27,13 +27,13 @@ def version2(version):
     #Asks user for prices and adds them to the list
     amt = int(input("How many prices do you want to add?"))
     for i in range(amt):
-        add_price = int(input("Enter a price: "))
+        add_price = float(input("Enter a price: "))
         prices.append(add_price)
     
     #Finds and prints the total price
     for i in prices: 
         total += i
-    print("The sum of the entered prices is" + str(total)) 
+    print("The sum of the entered prices is: " + str(total)) 
  
 #Version 3
 def version3(version):
@@ -49,7 +49,7 @@ def version3(version):
     
     #Asks user for prices and adds them to the list
     for i in range(amt_items):
-        add_price = int(input("Enter the prices of the items you bought (In the same order): "))
+        add_price = float(input("Enter the prices of the items you bought (In the same order): "))
         prices.append(add_price)
     
     #Prints the items along with their prices
@@ -67,4 +67,4 @@ if version == 1:
 elif version == 2:
     version2(version) 
 else: 
-    version3(version) 
+    version3(version)
