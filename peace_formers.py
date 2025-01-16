@@ -25,26 +25,27 @@ rooms = {
 
 # Helper functions
 def update_gui():
-    """Update the GUI elements."""
+    #Update the GUI elements.
     frame.set_draw_handler(draw)
     update_labels()
 
 def update_labels():
-    """Update labels for room description, inventory, health, and score."""
+    #Update labels for room description, inventory, health, and score.
     description_label.set_text(f"Room: {current_room}\n{rooms[current_room]['description']}")
     inventory_label.set_text(f"Inventory: {', '.join(inventory) if inventory else 'None'}")
     health_label.set_text(f"Health: {health}")
     score_label.set_text(f"Score: {score}")
 
 def go_to_room(room):
-    """Navigate to a different room."""
+    #Navigate to a different room.
     global current_room
     current_room = room
     update_gui()
 
 def open_chest():
-    """Simulate opening a chest with a random event."""
-    global score, inventory
+    #Simulate opening a chest with a random event.
+    global score
+    global inventory
     if "Key" not in inventory:
         found = random.choice(["Key", "Gold", "Nothing"])
         if found == "Nothing":
@@ -59,7 +60,7 @@ def open_chest():
     update_labels()
 
 def fight_monster():
-    """Simulate fighting a monster with random outcomes."""
+    #Simulate fighting a monster with random outcomes.
     global health, score
     outcome = random.choice(["win", "lose"])
     if outcome == "win":
@@ -72,7 +73,7 @@ def fight_monster():
     update_labels()
 
 def check_game_over():
-    """Check for win or loss conditions."""
+    #Check for win or loss conditions.
     global current_room
     if health <= 0:
         description_label.set_text("You have died! Game Over!")
@@ -96,7 +97,7 @@ def draw(canvas):
     canvas.draw_text("Text Adventure Game", [50, 50], 24, "White")
 
 # Frame and GUI elements
-frame = simplegui.create_frame("Text Adventure Game", 400, 300)
+frame = simplegui.create_frame("Text Adventure Game", 600, 500)
 
 description_label = frame.add_label("")
 inventory_label = frame.add_label("")
