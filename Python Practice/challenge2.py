@@ -4,6 +4,6 @@
 # Python Challenge 2
 
 def right_justify(s):
-    print(s.rjust(70))
+    print(" " * (70 - len(s)) + s)
     
 right_justify("allen")
