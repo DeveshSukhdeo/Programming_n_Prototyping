@@ -1,3 +1,8 @@
+# Devesh Sukhdeo
+# Period 1-2 
+# 3/3/25
+# Python Challenge #3
+
 def do_twice(f, value):
     f(value)
     f(value)
