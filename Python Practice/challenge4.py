@@ -3,6 +3,12 @@
 # 3/6/25
 # Python Coding Challenge 3 
 
+def four(a):
+    a()
+    a()
+    a()
+    a()
+    
 def make_grid():
     print ("+----+----+----+----+")
     print ("|    |    |    |    |")
@@ -10,20 +16,5 @@ def make_grid():
     print ("|    |    |    |    |")
     print ("|    |    |    |    |")
     print ("+----+----+----+----+")
-    print ("|    |    |    |    |")
-    print ("|    |    |    |    |")
-    print ("|    |    |    |    |")
-    print ("|    |    |    |    |")
-    print ("+----+----+----+----+")
-    print ("|    |    |    |    |")
-    print ("|    |    |    |    |")
-    print ("|    |    |    |    |")
-    print ("|    |    |    |    |")
-    print ("+----+----+----+----+")
-    print ("|    |    |    |    |")
-    print ("|    |    |    |    |")
-    print ("|    |    |    |    |")
-    print ("|    |    |    |    |")
-    print ("+----+----+----+----+")
     
-make_grid() 
+four(make_grid)
