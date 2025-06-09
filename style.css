@@ -121,7 +121,6 @@ hr{
 
 .cfubox{
   align: center; 
-  column-gap: 20px; 
   margin-top: 10px; 
   margin-right: 20px;
   margin-left: 20px;
@@ -134,8 +133,8 @@ hr{
   background-color: blue;
   width: 50%;
   height: 600px;
-  padding: 20px;
-  margin: 20px; 
+  padding: 30px;
+  margin: 30px; 
 }
 
 iframe{
