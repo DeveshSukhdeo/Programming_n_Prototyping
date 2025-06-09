@@ -134,6 +134,8 @@ hr{
   background-color: blue;
   width: 50%;
   height: 350px;
+  padding: 20px;
+  margin: 20px; 
 }
 
 iframe{
