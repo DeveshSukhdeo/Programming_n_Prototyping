@@ -129,6 +129,15 @@ hr{
   padding: 20px;
 }
 
+.newbox{
+  align: center;
+  column-gap: 20px; 
+  margin-top: 10px; 
+  margin-right: 20px;
+  margin-left: 20px;
+  padding: 20px;
+}
+
 iframe{
   padding: 5px;
   margin: 8px;
