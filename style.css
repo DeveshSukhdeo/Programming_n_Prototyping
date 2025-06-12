@@ -95,7 +95,6 @@ body {
 }
 
 .skill-images {
-  align: center;
   display: flex;
   margin: auto;
   width: 50%;
