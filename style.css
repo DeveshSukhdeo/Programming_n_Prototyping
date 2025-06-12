@@ -97,7 +97,7 @@ body {
 .skill-images {
   display: flex;
   margin: auto;
-  width: 50%;
+  width: 100%;
 }
 
 .picture {
