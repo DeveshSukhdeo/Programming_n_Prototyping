@@ -114,4 +114,6 @@ img{
   height: 90px;
   width: 50px;
   border-radius: 10px;
+  border-color: white;
+  border-weight: 4px; 
 }
