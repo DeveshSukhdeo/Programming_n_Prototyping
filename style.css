@@ -93,3 +93,24 @@ body {
   font-size: 0.95em;
   color: #ccc;
 }
+
+.skill-images {
+  display: flex;
+  margin: auto;
+  width: 50%;
+}
+
+.picture {
+  flex: 33.33%;
+  padding: 15px;
+  transition: transform .2s;
+}
+.picture:hover{
+  transform: scale(1.05); 
+}
+
+img{
+  height: 100px;
+  width: 70px;
+  border-radius: 10px;
+}
